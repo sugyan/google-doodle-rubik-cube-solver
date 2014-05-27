@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Google Doodle's Rubik's Cube Solver",
+    "version": "0.0.1",
+    "content_scripts": [
+        {
+            "matches": ["*://www.google.com/logos/2014/rubiks/rubiks.html"],
+            "js": ["js/www.google.com/main.js"]
+        },
+        {
+            "matches": ["https://gstatic.com/logos/2014/rubiks/iframe/index.html"],
+            "js": ["js/gstatic.com/scramble_333.js", "js/gstatic.com/main.js"],
+            "all_frames": true
+        }
+    ]
+}
